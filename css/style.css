@@ -4,24 +4,24 @@
 
 :root {
   /* Brand palette */
-  --navy-950: #0a1628;
-  --navy-900: #0e1f38;
-  --navy-800: #142a4a;
-  --navy-700: #1c3a63;
-  --navy-600: #274d82;
-  --steel-500: #5b7699;
-  --steel-300: #9fb3cc;
-  --steel-100: #eaf0f7;
-  --amber-500: #f2870f;
-  --amber-400: #ff9e2c;
-  --amber-050: #fff4e6;
+  --navy-950: #081120;
+  --navy-900: #0c1b32;
+  --navy-800: #122748;
+  --navy-700: #1a3660;
+  --navy-600: #23477e;
+  --steel-500: #55708c;
+  --steel-300: #93a6bd;
+  --steel-100: #e9edf3;
+  --amber-500: #b8792c;
+  --amber-400: #cc9142;
+  --amber-050: #f8f0e2;
   --gray-900: #1a1e24;
   --gray-700: #4b5563;
   --gray-500: #6b7280;
   --gray-300: #d7dce2;
   --gray-100: #f4f6f8;
   --white: #ffffff;
-  --success: #1e8a5c;
+  --success: #1c7a52;
 
   --font-head: "Oswald", "Arial Narrow", sans-serif;
   --font-body: "Inter", -apple-system, Segoe UI, Roboto, sans-serif;
@@ -511,12 +511,12 @@ section { padding: 88px 0; }
 .gallery-item::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(10,22,40,0.85)); z-index: 1; }
 .gallery-item span { position: relative; z-index: 2; }
 .gallery-item.tall { grid-row: span 2; }
-.g1 { background: linear-gradient(135deg, #274d82, #0e1f38); }
-.g2 { background: linear-gradient(135deg, #5b7699, #142a4a); }
-.g3 { background: linear-gradient(135deg, #f2870f, #0a1628); }
-.g4 { background: linear-gradient(135deg, #1c3a63, #274d82); }
-.g5 { background: linear-gradient(135deg, #0e1f38, #5b7699); }
-.g6 { background: linear-gradient(135deg, #142a4a, #f2870f); }
+.g1 { background: linear-gradient(135deg, #23477e, #0c1b32); }
+.g2 { background: linear-gradient(135deg, #55708c, #122748); }
+.g3 { background: linear-gradient(135deg, #b8792c, #081120); }
+.g4 { background: linear-gradient(135deg, #1a3660, #23477e); }
+.g5 { background: linear-gradient(135deg, #0c1b32, #55708c); }
+.g6 { background: linear-gradient(135deg, #122748, #b8792c); }
 @media (max-width: 980px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } .gallery-item.tall { grid-row: span 1; } }
 
 /* Testimonials ------------------------------------------------------------------ */
@@ -604,7 +604,7 @@ section { padding: 88px 0; }
 
 /* CTA banner --------------------------------------------------------------------------- */
 .cta-banner {
-  background: linear-gradient(120deg, var(--amber-500), #d96f00);
+  background: linear-gradient(120deg, var(--amber-500), #96601f);
   border-radius: var(--radius-lg);
   padding: 46px 50px;
   display: flex;
