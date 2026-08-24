@@ -16,7 +16,6 @@
 <!--
   PERSONNALISATION AVANT MISE EN LIGNE :
   - Coordonnées (téléphone, e-mail, adresse) : voir <header> et section #contact — actuellement des exemples.
-  - Témoignages clients (section #avis) : exemples à remplacer par de vrais avis avant publication.
   - Réalisations (section #realisations) : remplacer les vignettes par de vraies photos de chantiers.
   - Mentions légales / SIRET (footer) : à compléter avec les informations réelles de l'entreprise.
   - Le formulaire de devis est démonstratif côté client : brancher un envoi réel (backend / service d'e-mail) avant mise en ligne.
@@ -111,30 +110,14 @@
       </div>
 
       <div class="hero-visual reveal in">
-        <div class="hero-card">
-          <svg class="shutter-illustration" viewBox="0 0 480 340" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0" y="0" width="480" height="340" rx="18" fill="#0c1b32"/>
-            <rect x="30" y="30" width="420" height="230" rx="10" fill="#122748" stroke="#23477e" stroke-width="2"/>
-            <g>
-              <rect x="55" y="55" width="370" height="16" rx="3" fill="#55708c"/>
-              <rect x="55" y="79" width="370" height="16" rx="3" fill="#4a6280"/>
-              <rect x="55" y="103" width="370" height="16" rx="3" fill="#55708c"/>
-              <rect x="55" y="127" width="370" height="16" rx="3" fill="#4a6280"/>
-              <rect x="55" y="151" width="370" height="16" rx="3" fill="#55708c"/>
-              <rect x="55" y="175" width="370" height="16" rx="3" fill="#4a6280"/>
-              <rect x="55" y="199" width="370" height="16" rx="3" fill="#b8792c"/>
-              <rect x="55" y="223" width="370" height="24" rx="3" fill="#081120" stroke="#b8792c" stroke-width="2"/>
-            </g>
-            <rect x="30" y="270" width="420" height="18" fill="#081120"/>
-            <circle cx="418" cy="45" r="10" fill="#b8792c"/>
-            <path d="M405 45h26M418 32v26" stroke="#081120" stroke-width="2.5" stroke-linecap="round"/>
-          </svg>
-          <div class="hero-quote-mini">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-            <div>
-              <strong>Devis clair sous 24h</strong>
-              <span>Diagnostic gratuit, sans surprise sur la facture</span>
-            </div>
+        <div class="hero-photo-card">
+          <img src="Rideaux métalliques.jpg" alt="Technicien Rideaux Store installant un rideau métallique" loading="eager">
+        </div>
+        <div class="hero-quote-mini">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          <div>
+            <strong>Devis clair sous 24h</strong>
+            <span>Diagnostic gratuit, sans surprise sur la facture</span>
           </div>
         </div>
       </div>
@@ -162,41 +145,58 @@
 
       <div class="services-grid">
         <div class="service-card reveal">
-          <span class="tag">Le plus demandé</span>
-          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg></div>
-          <h3>Rideaux métalliques</h3>
-          <p>Fabrication, pose et réparation de rideaux à lames pleines, ajourées ou micro-perforées pour commerces et entrepôts.</p>
-          <a href="rideaux-metalliques.html" class="card-link">Découvrir le produit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <div class="service-photo"><span class="tag">Le plus demandé</span><img src="Rideaux métalliques.jpg" alt="Rideau métallique" loading="lazy"></div>
+          <div class="service-body">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg></div>
+            <h3>Rideaux métalliques</h3>
+            <p>Fabrication, pose et réparation de rideaux à lames pleines, ajourées ou micro-perforées pour commerces et entrepôts.</p>
+            <a href="rideaux-metalliques.html" class="card-link">Découvrir le produit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
         </div>
         <div class="service-card reveal">
-          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M4 9.3h16M4 14.7h16" stroke-linecap="round"/></svg></div>
-          <h3>Portes sectionnelles</h3>
-          <p>Portes industrielles sectionnelles motorisées, isolées et adaptées aux flux logistiques et sites de production.</p>
-          <a href="portes-sectionnelles.html" class="card-link">Découvrir le produit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <div class="service-photo"><img src="Portes sectionnelles.jpg" alt="Porte sectionnelle" loading="lazy"></div>
+          <div class="service-body">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M4 9.3h16M4 14.7h16" stroke-linecap="round"/></svg></div>
+            <h3>Portes sectionnelles</h3>
+            <p>Portes industrielles sectionnelles motorisées, isolées et adaptées aux flux logistiques et sites de production.</p>
+            <a href="portes-sectionnelles.html" class="card-link">Découvrir le produit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
         </div>
         <div class="service-card reveal">
-          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 4v16M11 4v16M15 4v16M19 4v16" stroke-linecap="round"/></svg></div>
-          <h3>Portes souples PVC</h3>
-          <p>Portes à haute cadence pour flux intense, chambres froides et zones à contraintes thermiques ou hygiéniques.</p>
-          <a href="portes-souples-pvc.html" class="card-link">Découvrir le produit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <div class="service-photo"><img src="Portes souples PVC.jpg" alt="Porte souple PVC" loading="lazy"></div>
+          <div class="service-body">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 4v16M11 4v16M15 4v16M19 4v16" stroke-linecap="round"/></svg></div>
+            <h3>Portes souples PVC</h3>
+            <p>Portes à haute cadence pour flux intense, chambres froides et zones à contraintes thermiques ou hygiéniques.</p>
+            <a href="portes-souples-pvc.html" class="card-link">Découvrir le produit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
         </div>
         <div class="service-card reveal">
-          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 9h16M4 14h16M9 4v16M14 4v16"/></svg></div>
-          <h3>Grilles de sécurité</h3>
-          <p>Grilles extensibles et rideaux ajourés pour vitrines et galeries commerciales, sur mesure et motorisables.</p>
-          <a href="grilles-securite.html" class="card-link">Découvrir le produit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <div class="service-photo"><img src="Grilles de sécurité.jpg" alt="Grille de sécurité" loading="lazy"></div>
+          <div class="service-body">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 9h16M4 14h16M9 4v16M14 4v16"/></svg></div>
+            <h3>Grilles de sécurité</h3>
+            <p>Grilles extensibles et rideaux ajourés pour vitrines et galeries commerciales, sur mesure et motorisables.</p>
+            <a href="grilles-securite.html" class="card-link">Découvrir le produit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
         </div>
         <div class="service-card reveal">
-          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.2 2.2M17.6 17.6l2.2 2.2M2 12h3M19 12h3M4.2 19.8l2.2-2.2M17.6 6.4l2.2-2.2"/></svg></div>
-          <h3>Motorisation &amp; automatisme</h3>
-          <p>Motorisation, télécommandes et systèmes de sécurité anti-intrusion pour un usage simple et fiable au quotidien.</p>
-          <a href="motorisation-automatisme.html" class="card-link">Découvrir le produit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <div class="service-photo"><img src="Motorisation &amp; automatisme portail.jpg" alt="Motorisation" loading="lazy"></div>
+          <div class="service-body">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.2 2.2M17.6 17.6l2.2 2.2M2 12h3M19 12h3M4.2 19.8l2.2-2.2M17.6 6.4l2.2-2.2"/></svg></div>
+            <h3>Motorisation &amp; automatisme</h3>
+            <p>Motorisation, télécommandes et systèmes de sécurité anti-intrusion pour un usage simple et fiable au quotidien.</p>
+            <a href="motorisation-automatisme.html" class="card-link">Découvrir le produit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
         </div>
         <div class="service-card reveal">
-          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 1.4 0l1.6-1.6a1 1 0 0 1 1.4 0l1.2 1.2a1 1 0 0 1 0 1.4l-1.6 1.6a1 1 0 0 0 0 1.4l3 3a1 1 0 0 1 0 1.4l-1.2 1.2a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 0-1.4 0L6.5 21.2a1 1 0 0 1-1.4 0L3.9 20a1 1 0 0 1 0-1.4L12.1 10.4"/></svg></div>
-          <h3>Maintenance &amp; SAV</h3>
-          <p>Contrats d'entretien préventif et service de dépannage réactif pour limiter les arrêts d'activité.</p>
-          <a href="maintenance-sav.html" class="card-link">Découvrir le produit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <div class="service-photo"><img src="Maintenance &amp; SAV.jpg" alt="Maintenance et SAV" loading="lazy"></div>
+          <div class="service-body">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 1.4 0l1.6-1.6a1 1 0 0 1 1.4 0l1.2 1.2a1 1 0 0 1 0 1.4l-1.6 1.6a1 1 0 0 0 0 1.4l3 3a1 1 0 0 1 0 1.4l-1.2 1.2a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 0-1.4 0L6.5 21.2a1 1 0 0 1-1.4 0L3.9 20a1 1 0 0 1 0-1.4L12.1 10.4"/></svg></div>
+            <h3>Maintenance &amp; SAV</h3>
+            <p>Contrats d'entretien préventif et service de dépannage réactif pour limiter les arrêts d'activité.</p>
+            <a href="maintenance-sav.html" class="card-link">Découvrir le produit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
         </div>
       </div>
     </div>
@@ -206,22 +206,11 @@
   <section id="pourquoi" class="bg-alt">
     <div class="container split">
       <div class="split-visual reveal">
-        <svg viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg" style="border-radius:20px;">
-          <rect width="500" height="420" fill="#122748"/>
-          <rect x="40" y="40" width="420" height="260" rx="8" fill="#0c1b32"/>
-          <rect x="70" y="70" width="360" height="14" rx="3" fill="#55708c"/>
-          <rect x="70" y="94" width="360" height="14" rx="3" fill="#4a6280"/>
-          <rect x="70" y="118" width="360" height="14" rx="3" fill="#55708c"/>
-          <rect x="70" y="142" width="360" height="14" rx="3" fill="#4a6280"/>
-          <rect x="70" y="166" width="360" height="14" rx="3" fill="#55708c"/>
-          <rect x="70" y="190" width="360" height="14" rx="3" fill="#b8792c"/>
-          <rect x="70" y="214" width="360" height="30" rx="4" fill="#081120" stroke="#b8792c" stroke-width="2"/>
-          <rect x="40" y="320" width="420" height="20" fill="#081120"/>
-          <g transform="translate(330,320)">
-            <circle cx="0" cy="0" r="46" fill="#b8792c"/>
-            <path d="M-16 0l10 10 22-22" stroke="#081120" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-          </g>
-        </svg>
+        <img src="Motorisation &amp; automatisme portail.jpg" alt="Portail motorisé installé par Rideaux Store" style="border-radius:var(--radius-lg);width:100%;display:block;">
+        <div class="split-badge">
+          <strong>98%</strong>
+          <span>Clients satisfaits</span>
+        </div>
       </div>
       <div class="reveal">
         <div class="eyebrow">Pourquoi nous choisir</div>
@@ -286,63 +275,6 @@
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section id="avis" class="bg-alt">
-    <div class="container">
-      <div class="section-head reveal">
-        <div class="eyebrow" style="justify-content:center">Avis clients</div>
-        <h2>Ce que nos clients professionnels en disent</h2>
-      </div>
-      <div class="testimonial-grid">
-        <div class="testimonial-card reveal">
-          <div class="stars">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-          </div>
-          <p class="quote">« Intervention le lendemain de notre appel pour un rideau bloqué en pleine ouverture. Équipe efficace et tarif annoncé respecté. »</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">G</div>
-            <div><strong>Gérant de commerce</strong><span>Nice</span></div>
-          </div>
-          <span class="sample-flag">Exemple — à remplacer par un avis client réel</span>
-        </div>
-        <div class="testimonial-card reveal">
-          <div class="stars">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-          </div>
-          <p class="quote">« Installation complète d'une porte sectionnelle sur notre entrepôt. Devis clair, chantier propre, aucune surprise sur la facture. »</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">R</div>
-            <div><strong>Responsable logistique</strong><span>Antibes</span></div>
-          </div>
-          <span class="sample-flag">Exemple — à remplacer par un avis client réel</span>
-        </div>
-        <div class="testimonial-card reveal">
-          <div class="stars">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-          </div>
-          <p class="quote">« Contrat de maintenance annuel mis en place sur nos trois sites. Suivi sérieux et rappels avant chaque visite. »</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">D</div>
-            <div><strong>Directeur d'exploitation</strong><span>Cannes</span></div>
-          </div>
-          <span class="sample-flag">Exemple — à remplacer par un avis client réel</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ZONE D'INTERVENTION -->
   <section id="zone">
     <div class="container coverage-wrap">
@@ -361,13 +293,7 @@
         <a href="#contact" class="btn btn-primary" style="margin-top:26px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Vérifier votre secteur</a>
       </div>
       <div class="coverage-map reveal">
-        <svg viewBox="0 0 400 340" xmlns="http://www.w3.org/2000/svg">
-          <path d="M40 260 Q80 120 180 90 Q280 60 360 140 Q380 200 320 260 Q220 310 120 300 Q60 290 40 260Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
-        </svg>
-        <div class="coverage-pin" style="top:36%;left:62%;"></div>
-        <div class="coverage-pin" style="top:52%;left:74%;"></div>
-        <div class="coverage-pin" style="top:44%;left:40%;"></div>
-        <div class="coverage-pin" style="top:64%;left:52%;"></div>
+        <iframe title="Zone d'intervention Rideaux Store — Côte d'Azur" src="https://www.openstreetmap.org/export/embed.html?bbox=6.75%2C43.52%2C7.45%2C43.83&amp;layer=mapnik" loading="lazy"></iframe>
       </div>
     </div>
   </section>
@@ -519,7 +445,6 @@
           <a href="#pourquoi">Pourquoi nous choisir</a>
           <a href="#realisations">Réalisations</a>
           <a href="#zone">Zone d'intervention</a>
-          <a href="#avis">Avis clients</a>
           <a href="#faq">FAQ</a>
         </div>
       </div>
