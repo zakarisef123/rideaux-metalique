@@ -448,7 +448,7 @@ section { padding: 88px 0; }
 /* Process steps --------------------------------------------------------------- */
 .process-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(var(--steps, 4), 1fr);
   gap: 24px;
   position: relative;
 }
@@ -468,6 +468,28 @@ section { padding: 88px 0; }
 .process-step p { font-size: 0.88rem; color: var(--steel-300); }
 @media (max-width: 900px) { .process-grid { grid-template-columns: repeat(2, 1fr); gap: 40px 24px; } }
 @media (max-width: 560px) { .process-grid { grid-template-columns: 1fr; } }
+
+/* Spec table ------------------------------------------------------------------ */
+.spec-table {
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--white);
+  max-width: 560px;
+}
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+  padding: 15px 22px;
+  border-bottom: 1px solid var(--gray-300);
+  font-size: 0.92rem;
+}
+.spec-row:last-child { border-bottom: none; }
+.spec-row:nth-child(odd) { background: var(--gray-100); }
+.spec-row .label { font-weight: 700; color: var(--navy-900); }
+.spec-row .value { color: var(--gray-700); text-align: right; }
 
 /* Gallery ---------------------------------------------------------------------- */
 .gallery-grid {
@@ -706,6 +728,37 @@ section { padding: 88px 0; }
 /* Reveal animation ------------------------------------------------------------------------- */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .reveal.in { opacity: 1; transform: translateY(0); }
+
+/* Shutter intro (opening animation on site load) ------------------------------------------- */
+#shutter-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: var(--steel-500);
+  background-image: repeating-linear-gradient(
+    180deg,
+    rgba(10, 22, 40, 0) 0px, rgba(10, 22, 40, 0) 26px,
+    rgba(10, 22, 40, 0.22) 26px, rgba(10, 22, 40, 0.22) 30px
+  );
+  animation: shutter-open 1.3s 0.35s cubic-bezier(.61,0,.3,1) forwards;
+}
+.shutter-intro-bar {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 36px;
+  background: var(--navy-950);
+  border-top: 4px solid var(--amber-500);
+}
+@keyframes shutter-open {
+  0%   { transform: translateY(0); }
+  8%   { transform: translateY(0); }
+  78%  { transform: translateY(-97%); }
+  92%  { transform: translateY(-101.5%); }
+  100% { transform: translateY(-100%); visibility: hidden; pointer-events: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #shutter-intro { display: none; }
+}
 
 /* Misc ------------------------------------------------------------------------------------- */
 .two-col-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 44px; flex-wrap: wrap; }
