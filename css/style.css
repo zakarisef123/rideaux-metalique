@@ -180,6 +180,8 @@ section { padding: 88px 0; }
   gap: 24px;
 }
 .brand { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.brand-logo-img { height: 58px; width: auto; border-radius: 10px; box-shadow: var(--shadow-sm); display: block; }
+.footer-brand .brand-logo-img { height: 68px; box-shadow: none; }
 .brand-mark {
   width: 46px; height: 46px;
   border-radius: var(--radius-sm);
@@ -759,6 +761,34 @@ section { padding: 88px 0; }
 @media (prefers-reduced-motion: reduce) {
   #shutter-intro { display: none; }
 }
+
+/* Real photo blocks (hero + réalisations) --------------------------------------------------- */
+.hero-photo-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 4 / 3.3;
+  border: 1px solid rgba(255,255,255,0.14);
+}
+.hero-photo-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.realisation-photo {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 420px;
+  box-shadow: var(--shadow-lg);
+}
+.realisation-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.realisation-photo::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 45%, rgba(8,17,32,0.85));
+}
+.realisation-caption { position: absolute; left: 26px; right: 26px; bottom: 22px; z-index: 2; color: var(--white); }
+.realisation-caption strong { display: block; font-size: 1.1rem; }
+.realisation-caption span { font-size: 0.85rem; color: var(--steel-100); }
+@media (max-width: 640px) { .realisation-photo { height: 280px; } }
 
 /* Misc ------------------------------------------------------------------------------------- */
 .two-col-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 44px; flex-wrap: wrap; }
