@@ -710,3 +710,23 @@ section { padding: 88px 0; }
 /* Misc ------------------------------------------------------------------------------------- */
 .two-col-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 44px; flex-wrap: wrap; }
 .two-col-head .section-head { text-align: left; margin: 0; }
+
+/* Breadcrumb --------------------------------------------------------------------------------- */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--steel-300);
+  margin-bottom: 22px;
+}
+.breadcrumb a { color: var(--steel-300); font-weight: 600; }
+.breadcrumb a:hover { color: var(--white); }
+.breadcrumb svg { width: 12px; height: 12px; opacity: 0.6; }
+.breadcrumb span[aria-current] { color: var(--amber-400); font-weight: 700; }
+
+/* Product page long-form copy ------------------------------------------------------------------ */
+.prose { max-width: 760px; }
+.prose p { color: var(--gray-700); font-size: 1rem; margin-bottom: 18px; }
+.prose p:last-child { margin-bottom: 0; }
